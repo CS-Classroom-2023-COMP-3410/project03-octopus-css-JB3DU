@@ -1,0 +1,182 @@
+
+body {
+  background-color: #CAF0F8; /* Using a color name */
+  margin: 0 20%; 
+}
+
+/* The code formatting for the list-related stuff is a giant mess. I'm sorry. */
+td, th { 
+  padding: 10px; 
+}
+th {
+    font-weight: bold;
+    color: white;
+    background-color: grey;
+    text-align: left;
+}
+td {
+    color: #03045e;
+
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff; 
+}
+
+tr:nth-child(even) {
+  background-color: #caf0f8;
+}
+
+h1 { /* I again had to give a best guess at all the fonts used for the original page...*/
+    font-family: "Arial Semibold", Times, serif;
+    text-transform: uppercase;
+    color: #006994; 
+}
+
+h2 {
+    font-family: "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    color: #006994;
+    font-size: 28px;
+    border-bottom: 3px solid #90e0ef; 
+    padding-bottom: 5px; 
+    width: 10%;
+}
+
+h3 {
+    color: #006994;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 5px 0;
+}
+h4, h5 {
+    color: #006994;
+    margin: 5px 0;
+}
+
+h6 {
+    color: #006994;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+p {
+    font-family: "Arial Narrow Bold", Helvetica, sans-serif; /*I'm pretty sure this is how to do fonts with spaces, at least.*/
+    color: #03045E;
+    margin: 5px 5;
+}
+ul li::marker {
+    color: #00b4d8; 
+}
+
+ol, ul {
+    font-family: "Arial Narrow Bold", Helvetica, sans-serif;
+    color: #03045E;
+    padding-bottom: 10px;
+}
+li {
+    padding-top: 10px; /*Repetitive, but it's to get the spacing accurate to the image.*/
+}
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif; /*It looks slightly wrong but this is the closest I could come up with for the table font.*/
+    border-spacing: 15px;
+}
+
+#title1 {
+    font-family: Garamond, serif; /* I could not find the font used in the screenshot version for the life of me...*/
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    font-size: 36px;
+
+}
+
+#title2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    text-align: left;
+    font-size: 16px;
+}
+
+#header {
+    background-image: linear-gradient(to right, #00709A , #00AED2);
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0px 0px 5px 5px #00000022;
+}
+#main-content {
+    background-color: #ffffff;
+    padding: 25px;
+    text-align: left;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0px 0px 5px 5px #00000022;
+}
+
+#quiz-section {
+    padding: 20px;
+    background-color: #90e0ef;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#footer {
+    padding: 20px;
+    color: white;
+    background-color: #006994;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+span.important { /*This was really confusing at first.*/
+    padding: 1px;
+    background-color: #90e0ef;
+    color: #006994;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+
+#footertext {
+    color: white;
+}
+
+.image-box {
+  border: 3px solid #8200E6;
+  float: left;
+  margin-right: 20px;
+}
+
+#quiztitle {
+    text-align: left;
+}
+
+label, input {
+    display: flex;
+    justify-content: flex-end;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #03045e;
+    font-weight: bold;
+}
+
+a {
+    color: #006994;
+    text-decoration: none;
+}
+
+#species-header {
+    white-space: nowrap;
+    text-transform: none;
+}
