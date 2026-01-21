@@ -58,23 +58,29 @@
         </p>
 
         <!-- Fun Experiment: Octopus Quiz -->
-        <div id="quiz-section">
+        <div id="quiz-section" class="quiz-section">
+        <div class="quiz-info">
 
             <!-- Image -->
-            <img src="octopus-image.png" alt="Image of an octopus" width="100" class="image-box">
-
             <h2 id="quiztitle">Octopus Quiz</h2>
+            <img class="image-box" src="octopus-image.png" alt="Image of an octopus" width="100">
+
+            
+        </div>
+        <div class="quiz-spacer"></div>
+        <div id="quiz-problems" class="quiz-problems">
             <form action="/submit-quiz" method="POST">
                 <!-- Question 1 -->
-                <label for="question1">How many hearts does an octopus have?</label>
-                <input type="text" id="question1" name="question1"><br>
+                <label class="input" for="question1">How many hearts does an octopus have?</label>
+                <input class="textbox" type="text" id="question1" name="question1"><br>
 
                 <!-- Question 2 -->
-                <label for="question2">Can octopuses change color? (Yes/No)</label>
-                <input type="text" id="question2" name="question2"><br>
+                <label class="input" for="question2">Can octopuses change color? (Yes/No)</label>
+                <input class="textbox" type="text" id="question2" name="question2"><br>
 
-                <input type="submit" value="Submit Quiz">
+                <input class="button" type="submit" value="Submit Quiz">
             </form>
+        </div>
         </div>
 
     </div> <!-- End of main-content -->

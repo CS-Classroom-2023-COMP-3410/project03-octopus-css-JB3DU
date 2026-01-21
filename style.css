@@ -11,7 +11,7 @@ td, th {
 th {
     font-weight: bold;
     color: white;
-    background-color: grey;
+    background-color: #999999;
     text-align: left;
 }
 td {
@@ -82,7 +82,8 @@ li {
 
 table {
     border-collapse: collapse;
-    width: 100%;
+    margin: auto;
+    width: 90%;
     font-family: Arial, Helvetica, sans-serif; /*It looks slightly wrong but this is the closest I could come up with for the table font.*/
     border-spacing: 15px;
 }
@@ -122,13 +123,6 @@ table {
     box-shadow: 0px 0px 5px 5px #00000022;
 }
 
-#quiz-section {
-    padding: 20px;
-    background-color: #90e0ef;
-    border-radius: 15px;
-    margin: 20px;
-}
-
 #footer {
     padding: 20px;
     color: white;
@@ -150,27 +144,6 @@ span.important { /*This was really confusing at first.*/
     color: white;
 }
 
-.image-box {
-  border: 3px solid #8200E6;
-  float: left;
-  margin-right: 20px;
-}
-
-#quiztitle {
-    text-align: left;
-}
-
-label, input {
-    display: flex;
-    justify-content: flex-end;
-}
-
-label {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #03045e;
-    font-weight: bold;
-}
-
 a {
     color: #006994;
     text-decoration: none;
@@ -179,4 +152,90 @@ a {
 #species-header {
     white-space: nowrap;
     text-transform: none;
+}
+
+
+/*The quiz stuff is a huge pain.*/
+
+#quiz-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #90e0ef;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 40px 20px 20px 60px;
+    outline-width: 2px;
+    outline-color: #CCCCCC;
+}
+
+.image-box {
+  border: 3px solid #8200E6;
+  margin-bottom: 10px;
+  margin-right: 0;
+  margin-left: 20px;
+  display: block;
+  float: none;
+}
+
+#quiztitle {
+    text-align: left;
+    white-space: nowrap;
+}
+
+.textbox {
+    outline-width: 1px;
+    border-radius: 5px;
+    border-color: #006994;
+    padding: 5px 5px;
+    margin-bottom: 25px;
+    flex-direction: column; 
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #03045e;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.button {
+    background-color: #006994;
+    outline: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #006994;
+    font-size: 16px;
+    margin: 0px;
+    display: inline-block;
+}
+
+.input-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-direction: column;
+}
+
+.quiz-problems {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.quiz-problems label {
+  margin-right: 0px;
+}
+.quiz-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 40px;
+}
+
+.quiz-spacer {
+  width: 330px; 
 }
